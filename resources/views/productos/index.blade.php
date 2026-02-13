@@ -65,7 +65,7 @@
                                     <td class="px-6 py-4 text-gray-800 font-medium">{{ $producto->id }}</td>
                                     <td class="px-6 py-4 text-gray-700">{{ $producto->nombre }}</td>
                                     <td class="px-6 py-4 text-gray-800 font-semibold">
-                                        ${{ number_format($producto->precio, 2) }}</td>
+                                        ${{ number_format($producto->precio) }}</td>
                                     <td class="px-6 py-4 text-gray-700">
                                         {{ $producto->descripcion }}
                                     </td>

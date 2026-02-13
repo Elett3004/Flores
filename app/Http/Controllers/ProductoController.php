@@ -12,7 +12,7 @@ class ProductoController extends Controller
      */
     public function index()
     {
-        $productos = Producto::activos()->paginate(15);
+        $productos = Producto::activos()->paginate(10);
         return view('productos.index', compact('productos'));
     }
 
@@ -85,6 +85,6 @@ class ProductoController extends Controller
         $producto->update(['activo' => false]);
 
         return redirect()->route('productos.index')
-            ->with('success', 'Pedido desactivado exitosamente.');
+            ->with('success', 'Pedido eliminado exitosamente.');
     }
 }

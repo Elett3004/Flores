@@ -10,7 +10,6 @@ class Producto extends Model
         'nombre',
         'descripcion',
         'precio',
-        'stock',
         'fecha_entrega',
         'estado',
         'activo'

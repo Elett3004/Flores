@@ -56,9 +56,15 @@
                                         <td class="px-6 py-4 text-gray-800 font-medium">{{ $producto->id }}</td>
                                         <td class="px-6 py-4 text-gray-700">{{ $producto->nombre }}</td>
                                         <td class="px-6 py-4 text-gray-800 font-semibold">
-                                            ${{ number_format($producto->precio) }}</td>
-                                        <td class="px-6 py-4 text-gray-700">
+                                            ${{ number_format($producto->precio) }}
+                                        </td>
+                                        <td class="px-6 py-4 text-gray-700 truncate group relative"
+                                            style="max-width: 300px;" title="{{ $producto->descripcion }}">
                                             {{ $producto->descripcion }}
+                                            <span
+                                                class="invisible group-hover:visible absolute left-0 bottom-full mb-2 px-3 py-2 bg-gray-800 text-white text-sm rounded-lg whitespace-normal max-w-xs -translate-x-1/2 left-1/2 z-50 shadow-lg">
+                                                {{ $producto->descripcion }}
+                                            </span>
                                         </td>
                                         <td class="px-6 py-4 text-gray-700 text-center">
                                             @if ($producto->fecha_entrega)

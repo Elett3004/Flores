@@ -242,6 +242,32 @@ icacls storage /grant Everyone:(OI)(CI)F /T
 icacls bootstrap/cache /grant Everyone:(OI)(CI)F /T
 ```
 
+### Error: Extensión PDO PostgreSQL no habilitada
+```bash
+# Error común: "could not find driver" o "PDO_PGSQL extension not enabled"
+
+# Solución en Windows:
+# 1. Abre el archivo php.ini (busca la ubicación con: php --ini)
+# 2. Busca las siguientes líneas y descoméntalas (quita el ;):
+;extension=pdo_pgsql
+;extension=pgsql
+
+# Deben quedar así:
+extension=pdo_pgsql
+extension=pgsql
+
+# 3. Guarda el archivo y reinicia el servidor
+# 4. Verifica que esté habilitado:
+php -m | grep pgsql
+
+# Solución en Linux/Mac:
+sudo apt-get install php-pgsql  # Ubuntu/Debian
+brew install php@8.2-pgsql      # Mac con Homebrew
+
+# Verifica la instalación:
+php -m | grep pdo_pgsql
+```
+
 ---
 
 ## 📝 Comandos Útiles

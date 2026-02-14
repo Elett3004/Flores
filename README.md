@@ -1,59 +1,276 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<div align="center">
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+# 🌸 Proyecto Flores 🌸
+### Sistema de Gestión de Pedidos con Laravel
 
-## About Laravel
+<img src="https://img.shields.io/badge/Laravel-12-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" alt="Laravel 12">
+<img src="https://img.shields.io/badge/PHP-8.2+-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP 8.2+">
+<img src="https://img.shields.io/badge/PostgreSQL-13+-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL">
+<img src="https://img.shields.io/badge/TailwindCSS-3-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind CSS">
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+[![GitHub](https://img.shields.io/badge/GitHub-Elett3004/Flores-FF69B4?style=for-the-badge&logo=github)](https://github.com/Elett3004/Flores.git)
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+---
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+</div>
 
-## Learning Laravel
+## 📖 Descripción del Proyecto
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+Este proyecto es una **aplicación web elegante** desarrollada con **Laravel 12** para la gestión de pedidos florales. Cuenta con un sistema CRUD completo, diseño responsivo con gradientes rosados, y una interfaz moderna utilizando **TailwindCSS** y **Vite**. 
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### ✨ Características Principales
 
-## Laravel Sponsors
+- 🌹 **CRUD Completo** de productos/pedidos
+- 🎨 **Diseño Moderno** con gradientes rosados y morados
+- 📱 **Responsive Design** para todos los dispositivos
+- 🔍 **Filtros** de productos activos
+- 📊 **Paginación** integrada
+- ⚡ **Vite** para compilación rápida de assets
+- 🗄️ **PostgreSQL** como base de datos
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+---
 
-### Premium Partners
+## 💻 Requisitos del Sistema
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+Asegúrate de tener instaladas las siguientes herramientas:
 
-## Contributing
+| Herramienta | Versión Requerida | Comando de Verificación |
+|-------------|-------------------|-------------------------|
+| 🐘 **PHP** | >= 8.2 | `php -v` |
+| 📦 **Composer** | >= 2.0 | `composer -V` |
+| 🟢 **Node.js** | >= 22 | `node -v` |
+| 📦 **NPM** | >= 10 | `npm -v` |
+| 🐘 **PostgreSQL** | >= 13 | `psql --version` |
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+---
 
-## Code of Conduct
+## 🚀 Instalación Paso a Paso
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### 1️⃣ Clonar o Descomprimir el Proyecto
 
-## Security Vulnerabilities
+```bash
+# Si es un archivo ZIP
+unzip Flores.zip
+cd Flores
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+# O si clonas desde GitHub
+git clone https://github.com/Elett3004/Flores.git
+cd Flores
+```
 
-## License
+### 2️⃣ Instalar Dependencias de PHP
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+```bash
+composer install
+```
+
+### 3️⃣ Configurar Variables de Entorno
+
+```bash
+# Copiar el archivo de ejemplo
+cp .env.example .env
+
+# Generar la clave de la aplicación
+php artisan key:generate
+```
+
+### 4️⃣ Configurar PostgreSQL
+
+Edita el archivo `.env` con tus credenciales de PostgreSQL:
+
+```env
+DB_CONNECTION=pgsql
+DB_HOST=127.0.0.1
+DB_PORT=5432
+DB_DATABASE=flores
+DB_USERNAME=postgres
+DB_PASSWORD=tu_password    # Normalmente es 12345678
+```
+
+> **⚠️ Importante:** Debes crear la base de datos `flores` antes de ejecutar las migraciones.
+
+### 5️⃣ Crear la Base de Datos
+
+Abre la consola de PostgreSQL y ejecuta:
+
+```bash
+# Conectarse a PostgreSQL
+psql -U postgres
+
+# Dentro de la consola PostgreSQL
+CREATE DATABASE flores;
+\q
+```
+
+### 6️⃣ Ejecutar Migraciones
+
+Este comando creará todas las tablas necesarias:
+
+```bash
+php artisan migrate
+```
+
+Si deseas poblar la base de datos con datos de prueba:
+
+```bash
+php artisan migrate --seed
+```
+
+### 7️⃣ Instalar Dependencias Frontend
+
+```bash
+npm install
+```
+
+### 8️⃣ Compilar Assets (CSS y JS)
+
+**Modo desarrollo** (recomendado para trabajar):
+```bash
+npm run dev
+```
+
+**Modo producción** (para desplegar):
+```bash
+npm run build
+```
+
+---
+
+## 🎯 Ejecutar el Proyecto
+
+### Opción 1: Ejecución Simple
+
+```bash
+php artisan serve
+```
+
+Luego abre en tu navegador: **http://127.0.0.1:8000**
+
+### Opción 2: Ejecución Recomendada (2 Terminales)
+
+Para desarrollo activo, usa **dos terminales simultáneamente**:
+
+**Terminal 1** - Servidor Laravel:
+```bash
+php artisan serve
+```
+
+**Terminal 2** - Compilador Vite (Hot Reload):
+```bash
+npm run dev
+```
+
+> 💡 **Tip:** Con esta configuración, los cambios en CSS/JS se reflejarán automáticamente sin recargar.
+
+---
+
+## 📂 Estructura del Proyecto
+
+```
+Flores/
+├── 🌹 app/
+│   ├── Http/Controllers/     # Controladores (ProductoController)
+│   └── Models/               # Modelos (Producto, User)
+├── 🗄️ database/
+│   ├── migrations/           # Migraciones de base de datos
+│   ├── factories/            # Factories para testing
+│   └── seeders/              # Seeders de datos
+├── 🎨 resources/
+│   ├── css/                  # Estilos TailwindCSS
+│   ├── js/                   # JavaScript
+│   └── views/                # Vistas Blade
+│       └── productos/        # CRUD de productos
+├── 🛣️ routes/
+│   └── web.php              # Rutas web
+└── ⚙️ config/               # Archivos de configuración
+```
+
+---
+
+## 🌐 Rutas Disponibles
+
+| Método | Ruta | Acción | Descripción |
+|--------|------|--------|-------------|
+| GET | `/` | index | Página principal (lista de productos) |
+| GET | `/productos` | index | Lista de productos activos |
+| GET | `/productos/create` | create | Formulario de creación |
+| POST | `/productos` | store | Guardar nuevo producto |
+| GET | `/productos/{id}/edit` | edit | Formulario de edición |
+| PUT | `/productos/{id}` | update | Actualizar producto |
+| DELETE | `/productos/{id}` | destroy | Eliminar producto (soft delete) |
+
+---
+
+## 🎨 Tecnologías Utilizadas
+
+<div align="center">
+
+![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![Blade](https://img.shields.io/badge/Blade-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
+
+</div>
+
+---
+
+## 🐛 Solución de Problemas
+
+### Error: "Base de datos no encontrada"
+```bash
+# Verifica que la base de datos esté creada
+psql -U postgres -c "\l" | grep flores
+```
+
+### Error: "npm run dev no funciona"
+```bash
+# Reinstala las dependencias
+rm -rf node_modules package-lock.json
+npm install
+npm run dev
+```
+
+### Error: Permisos en storage/bootstrap
+```bash
+# En Linux/Mac
+chmod -R 775 storage bootstrap/cache
+
+# En Windows (como administrador)
+icacls storage /grant Everyone:(OI)(CI)F /T
+icacls bootstrap/cache /grant Everyone:(OI)(CI)F /T
+```
+
+---
+
+## 📝 Comandos Útiles
+
+```bash
+# Limpiar caché de Laravel
+php artisan cache:clear
+php artisan config:clear
+php artisan view:clear
+
+# Resetear base de datos
+php artisan migrate:fresh --seed
+
+# Ver rutas disponibles
+php artisan route:list
+
+# Modo mantenimiento
+php artisan down
+php artisan up
+```
+
+<div align="center">
+
+## 💖 Hecho con amor y flores 💖
+
+### 🌸 Proyecto Flores - 2026 🌸
+
+*Si te gusta este proyecto, no olvides darle una ⭐ en GitHub*
+
+[![GitHub](https://img.shields.io/badge/Elett3004-FF69B4?style=for-the-badge&logo=github)](https://github.com/Elett3004)
+
+</div>
